@@ -72,8 +72,8 @@ css
 ## Project Structure
 
 
-├── index.html         # Main HTML file
-├── styles.css         # CSS for styling the page
-├── app.js             # JavaScript for sidebar functionality
-├── logo.svg           # Logo image displayed in the sidebar
+├── index.html
+├── styles.css
+├── app.js
+├── logo.svg           
 
