@@ -31,38 +31,43 @@ The sidebar project is a simple yet functional example of how to create a collap
 
 javascript
 
-// Selecting necessary DOM elements
+**// Selecting necessary DOM elements**
+
 `const toggleBtn = document.querySelector('.sidebar-toggle');
 const closeBtn = document.querySelector('.close-btn');
 const sidebar = document.querySelector('.sidebar');`
 
-// Toggle the sidebar visibility when the hamburger button is clicked
+**// Toggle the sidebar visibility when the hamburger button is clicked**
+
 `toggleBtn.addEventListener('click', function() {
     sidebar.classList.toggle('show-sidebar');
 });`
 
-// Close the sidebar when the close button is clicked
+**// Close the sidebar when the close button is clicked**
+
 `closeBtn.addEventListener('click', function() {
     sidebar.classList.remove('show-sidebar');
 });`
 
 CSS
-The show-sidebar class is responsible for making the sidebar visible or hidden, with CSS transitions to animate the sidebar’s appearance.
+The *show-sidebar* class is responsible for making the sidebar visible or hidden, with CSS transitions to animate the sidebar’s appearance.
 
 css
 
-/* Sidebar is initially hidden */
+**/* Sidebar is initially hidden */**
+
 `.sidebar {
   transform: translateX(-100%);
   transition: transform 0.3s ease;
 }`
 
-/* Sidebar appears when the class 'show-sidebar' is added */
+**/* Sidebar appears when the class 'show-sidebar' is added */**
+
 `.sidebar.show-sidebar {
   transform: translateX(0);
 }`
 
-/* Rest of the styling for layout and responsiveness */
+
 
 ## Project Structure
 
