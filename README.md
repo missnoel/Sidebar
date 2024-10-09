@@ -29,41 +29,42 @@ The sidebar project is a simple yet functional example of how to create a collap
 - Opening the Sidebar: When the user clicks the toggle button (.sidebar-toggle), the JavaScript adds the class show-sidebar to the sidebar, making it visible.
 - Closing the Sidebar: When the user clicks the close button (.close-btn), the JavaScript removes the show-sidebar class, hiding the sidebar again.
 
-`javascript
+javascript
 
 // Selecting necessary DOM elements
-const toggleBtn = document.querySelector('.sidebar-toggle');
+`const toggleBtn = document.querySelector('.sidebar-toggle');
 const closeBtn = document.querySelector('.close-btn');
-const sidebar = document.querySelector('.sidebar');
+const sidebar = document.querySelector('.sidebar');`
 
 // Toggle the sidebar visibility when the hamburger button is clicked
-toggleBtn.addEventListener('click', function() {
+`toggleBtn.addEventListener('click', function() {
     sidebar.classList.toggle('show-sidebar');
-});
+});`
 
 // Close the sidebar when the close button is clicked
-closeBtn.addEventListener('click', function() {
+`closeBtn.addEventListener('click', function() {
     sidebar.classList.remove('show-sidebar');
 });`
 
 CSS
 The show-sidebar class is responsible for making the sidebar visible or hidden, with CSS transitions to animate the sidebar’s appearance.
 
-`css
+css
 
 /* Sidebar is initially hidden */
-.sidebar {
+`.sidebar {
   transform: translateX(-100%);
   transition: transform 0.3s ease;
-}
+}`
 
 /* Sidebar appears when the class 'show-sidebar' is added */
-.sidebar.show-sidebar {
+`.sidebar.show-sidebar {
   transform: translateX(0);
 }`
 
 /* Rest of the styling for layout and responsiveness */
-Project Structure
+
+## Project Structure
 
 
 ├── index.html         # Main HTML file
